@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    New Perspectives on HTML5 and CSS3, 8th Edition
+    Project 2-2
+    Grid Website
+
+    Raves R' Us
+    Author: Luis De Jesus  
+    Date: 11/25/2023
+
+    Filename: Project 2-2
+   -->
+   <link href="grid_2-2.css" rel="stylesheet">
+   <meta charset="utf-8" />
+   <title>Raves R'Us</title>      
+
+</head>
+
+<main>
+    <header>
+        <img src="Raves_R_Us_logo.png" alt="logo">
+    </header>
+    <aside>
+       <nav class="vertical" id="mainLinks">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="popularfestivals.html">Popular Festivals</a></li>
+             <li><a href="#">Essential Items</a></li>
+             <li><a href="#">Community Building</a></li>
+             <li><a href="faq.html">FAQ</a></li>            
+          </ul>
+       </nav>
+    </aside>
+    <section>
+    <article>
+        <h1>FAQ!!</h1>
+        <img src="Raves_R_Us_logo.png" alt="logo"/>
+        <p>Here you can post any questions about any and all things that have to do with the rave culture. We want to grow this community
+            as quickly as possible, so any and all questions are welcomed. Below is a form provided for any suggestions or questions that
+            you may have. Thank you for stopping by and remember to live P.L.U.R! That's live with Peace, Love, Unity, and Respect!! 
+    </article>
+    <p>Required values are marked by an asterisk (*)</p>
+
+    <form id="survey" action="http://www.example.com/redball/survey" method="post">
+      <fieldset id="custInfo"> 
+          <legend>Visitor Information</legend>
+          <div class="formRow">
+           <label for="name">Name*</label>
+           <input name="custName" id="name" type="text" placeholder="first and last name"required /> 
+          </div>
+
+
+          <div class="formRow">
+              <label for="phone">Phone number</label>
+              <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+          </div>
+
+          <div class="formRow">
+              <label for="mail">E-mail*</label>
+              <input name="custEmail" id="mail" type="email" required/>    
+          </div>
+
+          <div class="formRow"> 
+              <label for="info">Where did you hear about us? 
+              <br />(select all that apply) 
+              </label> 
+              <select name="infoSrc" id="info" size="5" multiple> 
+               <option value="internet">Internet</option> 
+               <option value="mag">Magazine</option> 
+               <option value="news">Newspaper</option> 
+               <option value="word">Word of Mouth</option> 
+               <option value="other">Other</option> 
+              </select> 
+              </div>
+              
+      </fieldset> 
+      <fieldset id="expInfo"> 
+          <legend>Share Your Questions & Suggestions</legend>
+
+          <div class="formRow"> 
+              <label for="visit">Date of visit</label> 
+              <input name="visitDate" id="visit" type="date" /> 
+          </div>
+
+          <div class="formRow"> 
+              <label for="order">Reason for Visiting?</label> 
+              <select name="orderType" id="order"> 
+              <option value="order1">Learn about Raving</option> 
+              <option value="order2">Want to join community</option> 
+              <option value="order3" selected>Learn about festivals</option> 
+              <option value="order4">Join your team</option> 
+              </select> 
+             </div>
+             <div class="formRow"> 
+              <label>Did you learn anything today?</label> 
+              <fieldset class="optGroup"> 
+              <label for="fYes">Yes</label> 
+              <input name="sFriend" id="fYes" value="yes" 
+             type="radio" /> 
+              <label for="fNo">No</label> 
+              <input name="sFriend" id="fNo" value="no" 
+             type="radio" /> 
+              </fieldset> 
+             </div>
+            
+
+             <div class="formRow"> 
+              <label for="dineSpin">How many friends do you have that rave?</label> 
+              <input name="dineOut" id="dineSpin" type="number" 
+              value="1" step="1" min="0" max="20" /> 
+             </div>
+
+             <input name="mailMe" id="mailCB" value="yes" type="checkbox" /> 
+             <label for="mailCB">Add me to your mailing list for great 
+             coupons and specials!</label> 
+          
+             <div class="formRow"> 
+              <label for="rangeBox">Rate the overall experience here<br /> 
+              (0=poor; 10=great)</label> 
+              0 
+              <input name="serviceRate" id="rangeBox" type="range" 
+              value="5" step="1" min="0" max="10" /> 
+              10 
+             </div>
+             
+             <label for="commBox">Give us any Questions and Suggestions that you think would help??</label> 
+             <textarea name="custExp" id="commBox"></textarea>
+      </fieldset>
+
+      <div id="buttons"> 
+          <input type="submit" value="Submit My Survey" /> 
+          <input type="reset" value="Cancel" /> 
+         </div>
+  </form>     
+ </section>
+ 
+</article>
+<footer>
+    Last updated: 12/2/2023 Luis De Jesus
+ </footer>
+</main>
